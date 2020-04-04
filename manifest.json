@@ -1,0 +1,17 @@
+{
+  "name": "Controlli Virtual Classroom - PoliTO",
+  "version": "1.0",
+  "description": "...",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://didattica.polito.it/*"],
+      "js": ["scripts/didattica.js"]
+    },
+    {
+      "matches": ["https://*.polito.it/playback/*"],
+      "js": ["scripts/virtualclassroom.js"],
+      "all_frames": true
+    }
+  ]
+}
