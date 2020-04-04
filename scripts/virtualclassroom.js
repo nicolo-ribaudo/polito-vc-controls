@@ -8,7 +8,6 @@ async function main() {
     var $fullscreenOld = document.querySelector(".acorn-fullscreen-button");
   } while ($fullscreenOld === null);
 
-  console.log($fullscreenOld);
   let $fullscreen = $fullscreenOld.cloneNode(true); // Remove event listeners
   $fullscreenOld.replaceWith($fullscreen);
 
